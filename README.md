@@ -19,6 +19,9 @@ This project is an extension of LibraryManagementUsingSpringBoot. It is an end-t
 15) Redis Caching
 
 # Functioning of Application
+
+In this application, a student can issue or return a book from this library and that can should be recorded using transaction. Before issuing a book to the user, several edge cases get checked. Edge cases are the user must be a valid student, is a book available in the library, is the book assigned to any student of the library, and many more. While returning a book to the library, it makes sure that the user is a valid student of the library. If yes, then it also makes sure that the student is returning the same book which was issued to him. Many other features are part of this application.
+
 There are five entity in this project: Student, User, Book, Author, Transaction. 
 REST APIs for Student Functionality:
 1) @PostMapping("/student")
